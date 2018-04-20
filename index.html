@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/screen.css" rel="stylesheet">
+	<title>ee39</title>
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<header style="border: solid 1px blue; height: 200px;"> header </header>
+
+	<div class="container">
+	
+	<div id="content"  class="col-sm-12 col-md-9">
+	<div class="order-wrap">		
+	<div class="order-title">
+		<div>Фото</div>
+		<div>Наименование товара</div>
+		<div>Цена</div>
+		<div>Количество</div>
+		<div>Сумма</div>
+		<div>Корзина</div>
+	</div>
+
+	<div id="order-wrap">
+
+	<div class="order">
+		<div><img src="img/print.png" alt=""></div>
+		<div><h3>Принтер A3 EPSON L1300, "фабрика печати", емкость чернил 70 мл каждого цвета, 2 емкости черного цвета</h3></div>
+		<div><h3>27 500 р.</h3></div>
+		<div>
+			<form class="counter">
+				<button  type="button" class="minus but counterBut dec">-</button>
+				<input type="text" class="field fieldCount" value="1" data-min="1" data-max="20">
+				<button  type="button" class="plus but counterBut inc">+</button>
+			</form>
+		</div>
+		<div><b>27 500 р.</b></div>
+		<div class="close-btn"><a href="#"><i class="fa fa-window-close" aria-hidden="true"></i></a></div>
+	</div>
+	
+	<div class="order">
+		<div><img src="img/print.png" alt=""></div>
+		<div><h3>Принтер A3 EPSON L1300, "фабрика печати", емкость чернил 70 мл каждого цвета, 2 емкости черного цвета</h3></div>
+		<div><h3>27 500 р.</h3></div>
+		<div>
+			<form class="counter">
+				<button  type="button" class="minus but counterBut dec">-</button>
+				<input type="text" class="field fieldCount" value="1" data-min="1" data-max="20">
+				<button  type="button" class="plus but counterBut inc">+</button>
+			</form>
+		</div>
+		<div><b>27 500 р.</b></div>
+		<div class="close-btn"><a href="#"><i class="fa fa-window-close" aria-hidden="true"></i></a></div>
+	</div>
+</div>
+	<!--end-order-->
+	</div>
+				
+	<div class="title">Способ получения заказа:</div>
+	
+	<div class="deliver col-md-12 col-sm-12 col-xs-12 variant-deliver">
+	<div class="row variant-deliver-without-padding">
+					
+	<div class="wrap-centr col-md-3 col-sm-3 col-xs-6">
+		<label for="firstRadio">
+			<div class="deliver-item variant-deliver-item" id="firstDelivery">	<!--*** Добавить клас off  ***-->
+				<div class="block-title-choose">
+					<input type="radio" name="#" id="firstRadio" class="radio">
+					<div class="delivery-content delivery-1" id="delivery-1">из 35 пунктов по Калининграду и области</div>
+					<span> </span>
+					<div class="wrap-noAvailable-item" id="pickupNotAvailable">
+						<div class="noAvailable">
+							<p class="noAvailable-text">Данный способ доставки недоступен для вашего региона</p>
+						</div>
+					</div>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel" for="firstRadio">
+					Самовывоз<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+					</label>
+				</span>
+				<div class="delivery-price"><div class="delivery-price-content">0 р.</div></div>						
+			</div>
+		</label>
+	</div>
+					
+	<div class="wrap-centr col-md-3 col-sm-3 col-xs-6">
+		<label for="secondRadio">
+			<div class="deliver-item variant-deliver-item" id="secondDelivery"><!--*** Добавить клас off  ***-->
+				<div class="block-title-choose">
+				<input type="radio" name="#" id="secondRadio" class="radio">
+				<div class="delivery-content delivery-2" id="delivery-2">по Калининграду и области</div>
+				<span> </span>
+				<div class="wrap-noAvailable-item" id="courierDelivery">
+					<div class="noAvailable">
+						<p class="noAvailable-text">Данный способ доставки недоступен для вашего региона</p>
+					</div>
+				</div>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel" for="secondRadio">
+					Доставка курьером<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+					</label>
+				</span>
+				<div class="delivery-price"><div class="delivery-price-content">250 р.</div></div>					
+			</div>
+		</label>
+	</div>
+
+	<div class="wrap-centr col-md-3 col-sm-3 col-xs-6" >
+		<label for="thirdRadio">
+			<div class="deliver-item variant-deliver-item" id="thirdDelivery"><!--*** Добавить клас off  ***-->
+				<div class="block-title-choose">
+				<input type="radio" name="#" id="thirdRadio" class="radio">
+				<div class="delivery-content delivery-3" id="delivery-3">доставка в любой уголок страны</div>
+				<span> </span>
+				<div class="wrap-noAvailable-item" id="expressDeliveryByCourier">
+					<div class="noAvailable">
+						<p class="noAvailable-text">Данный способ доставки недоступен для вашего региона</p>
+					</div>
+				</div>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel" for="thirdRadio">
+					Экспресс-доставка курьером<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+					</label>
+				</span>
+				<div class="delivery-price"><div class="delivery-price-content">450 р.</div></div>		
+			</div>
+		</label>
+	</div>
+
+	<div class="wrap-centr col-md-3 col-sm-3 col-xs-6" >
+		<label for="fourthRadio">
+			<div class="deliver-item variant-deliver-item off" id="fourthDelivery"><!--*** Удалить клас off  ***-->
+				<div class="block-title-choose">
+				<input type="radio" name="#" id="thirdRadio" class="radio" disabled="disabled">
+				<div class="delivery-content delivery-4" id="delivery-4">доставка в любой уголок страны</div>
+				<span> </span>
+				<div class="wrap-noAvailable-item" id="ems">
+					<div class="noAvailable">
+						<p class="noAvailable-text">Данный способ доставки недоступен для вашего региона</p>
+					</div>
+				</div>
+			</div>
+			<span class="choose-delivery">
+				<label class="myLabel" for="fourthRadio">
+				Почта России/EMS<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+				</label>
+			</span>
+			<div class="delivery-price"><div class="delivery-price-content">800 р.</div></div>							
+			</div>
+		</label>
+	</div>
+	<!--END-->
+	</div>
+	</div>
+
+	<div class="title">Адрес доставки:</div>
+
+	<div class="col-md-12 col-sm-12 col-xs-12 wrap-address">
+							
+	<div class="col-md-6 col-sm-6  col-xs-12 firstAddressVersion" id="firstAddressVersion">
+		<div class="input-group">
+			<input type="text" class="form-control search-input" placeholder="Адрес">
+		    <span class="input-group-btn">
+		    	<button class="btn btn-default search" type="button">
+		    		<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		    	</button>
+		    </span>
+		</div>
+		<div class="examleAddress">
+			<a class="examleAddressLink" href="#">Калининград,</a>
+			<a class="examleAddressLink" href="#">Балтийский,</a>
+			<a class="examleAddressLink" href="#">Зеленоградск</a> 
+		</div>     
+	</div>
+	<div class="col-md-6 col-sm-6 col-xs-12 secondAddressVersion" id="secondAddressVersion">
+	<div class="input-group wrap-search-input">
+		<input type="text" class="form-control search-input" placeholder="Адрес">
+	    <span class="input-group-btn">
+	    	<button class="btn btn-default search" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+		</span>
+	</div>
+	<label class="labelAddress" for="region">Регион/район</label>
+	<div class="input-addres input-group wrap-search-input">
+		<input id="region" type="text" class="form-control search-input">
+	</div>
+	<label class="labelAddress" for="village">Населенный пункт</label>
+	<div class="input-addres input-group wrap-search-input">
+		<input id="village" type="text" class="form-control search-input">
+	</div>
+	<label class="labelAddress" for="street">Улица</label>
+	<div class="input-addres input-group wrap-search-input">
+		<input id="street" type="text" class="form-control search-input">
+	</div>
+	<label class="labelAddress" for="home">Строение/дом/корпус</label>
+	<div class="input-addres input-group wrap-search-input">
+		<input id="home" type="text" class="form-control search-input">
+	</div>
+	<label class="labelAddress" for="office">Квартира/офис</label>
+	<div class="input-addres input-group wrap-search-input">
+		<input id="office" type="text" class="form-control search-input">
+	</div>
+	</div>
+	<div class="col-md-6 col-sm-6 col-xs-12 thirdAddressVersion" id="thirdAddressVersion">
+		<div class="input-group wrap-search-input">
+			<input type="text" class="form-control search-input" placeholder="Адрес">
+		    <span class="input-group-btn">
+		    	<button class="btn btn-default search" type="button">
+		    		<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		    	</button>
+		    </span>
+	</div>
+							
+	<div class="city-wrap">
+		    <div class="list-city-name cityName">Город 1</div>
+		    <div class="selectCity">
+				<div class="addressBlock">
+					<input class="address-check" type="radio" name="city" id="street1">
+					<span class="streetName">
+						<label for="street1">ул. Иванова, 2</label>
+					</span><br>
+					<div class="nameAddress">Магазин Цветок, 8:00 — 22:00</div>
+				</div>
+				<div class="addressBlock">
+					<input class="address-check" type="radio" name="city" id="street2">
+					<span class="streetName">
+						<label for="street2">ул. Иванова, 2</label>
+					</span><br>
+					<div class="nameAddress">Магазин Цветок, 8:00 — 22:00</div>
+				</div>
+				<div class="addressBlock">
+					<input class="address-check" type="radio" name="city" id="street3">
+					<span class="streetName">
+						<label for="street3">ул. Иванова, 2</label>
+					</span><br>
+					<div class="nameAddress">Магазин Цветок, 8:00 — 22:00</div>
+				</div>
+			</div>	
+	</div>
+	<div class="city-wrap">
+		    <div class="list-city-name cityName">Город 2</div>
+		    <div class="selectCity">
+				<div class="addressBlock">
+					<input class="address-check" type="radio" name="city" id="street4">
+					<span class="streetName">
+						<label for="street4">ул. Иванова, 2</label>
+					</span><br>
+					<div class="nameAddress">Магазин Цветок, 8:00 — 22:00</div>
+				</div>
+				<div class="addressBlock">
+					<input class="address-check" type="radio" name="city" id="street5">
+					<span class="streetName">
+						<label for="street5">ул. Иванова, 2</label>
+					</span><br>
+					<div class="nameAddress">Магазин Цветок, 8:00 — 22:00</div>
+				</div>
+				<div class="addressBlock">
+					<input class="address-check" type="radio" name="city" id="street6">
+					<span class="streetName">
+						<label for="street6">ул. Иванова, 2</label>
+					</span><br>
+					<div class="nameAddress">Магазин Цветок, 8:00 — 22:00</div>
+				</div>
+			</div>	
+	</div>
+	<div class="city-wrap">
+		    <div class="list-city-name cityName">Город 3</div>
+		    <div class="selectCity">
+				<div class="addressBlock">
+					<input class="address-check" type="radio" name="city" id="street7">
+					<span class="streetName">
+						<label for="street7">ул. Иванова, 2</label>
+					</span><br>
+					<div class="nameAddress">Магазин Цветок, 8:00 — 22:00</div>
+				</div>
+				<div class="addressBlock">
+					<input class="address-check" type="radio" name="city" id="street8">
+					<span class="streetName">
+						<label for="street8">ул. Иванова, 2</label>
+					</span><br>
+					<div class="nameAddress">Магазин Цветок, 8:00 — 22:00</div>
+				</div>
+				<div class="addressBlock">
+					<input class="address-check" type="radio" name="city" id="street9">
+					<span class="streetName">
+						<label for="street9">ул. Иванова, 2</label>
+					</span><br>
+					<div class="nameAddress">Магазин Цветок, 8:00 — 22:00</div>
+				</div>
+			</div>	
+	</div>
+	</div>
+	<div class="col-md-6 col-sm-6 col-xs-12 map-wrap">
+		<div id="map" style="width: 415px; height: 368px;"></div>
+	</div>
+	<!--END-->
+	</div>			
+				
+	<div class="title">Способ оплаты:</div>
+
+	<div class="col-md-12 col-sm-12 col-xs-12 variant-deliver">
+	<div class="row variant-deliver-without-padding way-of-pay-without-padding">
+	
+	<div class="col-md-3 col-sm-3 col-xs-6 wrap-centr ">
+		<label for="firstRadioWayOfPay">
+			<div class="deliver-item variant-deliver-item variant-way-of-pay" id="firstWayOfPay"><!--*** Добавить клас offPay  ***-->
+				<div class="block-title-choose">
+					<input type="radio" name="#" id="firstRadioWayOfPay" class="radioWayOfPay">
+					<div class="wayOfPay-content" id="wayOfPay-1"></div>
+					<span> </span>
+					<div class="wrap-noAvailable-item-pay" id="cash">
+						<div class="noAvailable">
+							<p class="noAvailable-text">Данный способ оплаты недоуступен для выбранного товара</p>
+						</div>
+					</div>
+				</div>
+				<span class="choose-delivery"> 
+					<label class="myLabel labelWayOfPay" for="firstRadioWayOfPay">
+					Наличными при получении<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+					</label>
+				</span>
+				<div class="sale saleOn">-2%</div>
+			</div>
+		</label>
+	</div>
+
+	<div class="col-md-3 col-sm-3 col-xs-6 wrap-centr">
+		<label for="secondRadioWayOfPay">
+			<div class="deliver-item variant-deliver-item variant-way-of-pay" id="secondWayOfPay"><!--*** Добавить клас offPay  ***-->
+				<div class="block-title-choose">
+					<input class="radioWayOfPay" id="secondRadioWayOfPay" type="radio" name="#">
+					<div class="wayOfPay-content" id="wayOfPay-2"></div>
+					<span> </span>
+					<div class="wrap-noAvailable-item-pay" id="bank">
+						<div class="noAvailable">
+							<p class="noAvailable-text">Данный способ оплаты недоуступен для выбранного товара</p>
+						</div>
+					</div>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel labelWayOfPay" for="secondRadioWayOfPay">
+					Банковский<br>перевод<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+					</label>
+				</span>
+				<div class="sale">-2%</div>
+			</div>
+		</label>
+	</div>
+
+	<div class="col-md-3 col-sm-3 col-xs-6 wrap-centr" >
+		<label for="thirdRadioWayOfPay">
+			<div class="deliver-item variant-deliver-item variant-way-of-pay" id="thirdWayOfPay" ><!--*** Добавить клас offPay  ***-->
+				<div class="block-title-choose block-title-choose-other-bottom">
+					<input class="radioWayOfPay" type="radio" id="thirdRadioWayOfPay" name="#">
+					<div class="wayOfPay-content" id="wayOfPay-3"></div>
+					<span> </span>
+					<div class="wrap-noAvailable-item-pay" id="card">
+						<div class="noAvailable">
+							<p class="noAvailable-text">Данный способ оплаты недоуступен для выбранного товара</p>
+						</div>
+					</div>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel labelWayOfPay" for="thirdRadioWayOfPay">
+					Банковской картой при получении<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+					</label>
+				</span>
+				<div class="sale">-2%</div>
+			</div>
+		</label>
+	</div>
+
+	<div class="col-md-3 col-sm-3 col-xs-6 wrap-centr" >
+		<label for="fourthRadioWayOfPay">
+			<div class="deliver-item variant-deliver-item variant-way-of-pay" id="fourthWayOfPayWrap"><!--*** Добавить клас offPay  ***-->
+				<div class="block-title-choose">
+					<input class="radioWayOfPay" id="fourthRadioWayOfPay" type="radio" name="#">
+					<div class="wayOfPay-content" id="wayOfPay-4"></div>
+					<span> </span>
+					<div class="wrap-noAvailable-item-pay" id="cardOnline">
+						<div class="noAvailable">
+							<p class="noAvailable-text">Данный способ оплаты недоуступен для выбранного товара</p>
+						</div>
+					</div>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel labelWayOfPay" for="fourthRadioWayOfPay">
+					Банковской картой онлайн<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+					</label>
+				</span>
+				<div class="sale saleOn">-12%</div>
+			</div>
+		</label>
+	</div>
+
+	<div class="col-md-3 col-sm-3 col-xs-6 wrap-centr" >
+		<label for="fifthRadioWayOfPay">
+			<div class="deliver-item variant-deliver-item variant-way-of-pay offPay" id="fifthWayOfPay"><!--*** Добавить клас offPay  ***-->
+				<div class="block-title-choose">
+					<input type="radio" name="#" id="fifthRadioWayOfPay" class="radioWayOfPay">
+					<div class="wayOfPay-content" id="wayOfPay-5"></div>
+					<span></span>
+					<div class="wrap-noAvailable-item-pay" id="credit">
+						<div class="noAvailable">
+							<p class="noAvailable-text">Данный способ оплаты недоуступен для выбранного товара</p>
+						</div>
+					</div>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel labelWayOfPay" for="fifthRadioWayOfPay">
+					Кредит Тинькофф<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+					</label>
+				</span>
+			</div>
+		</label>
+	</div>
+
+	<div class="col-md-3 col-sm-3 col-xs-6 wrap-centr" >
+		<label for="sixthRadioWayOfPay">
+			<div class="deliver-item variant-deliver-item variant-way-of-pay offPay" id="sixthWayOfPay"><!--*** Добавить клас offPay  ***-->
+				<div class="block-title-choose">
+					<input class="radioWayOfPay" id="sixthRadioWayOfPay" type="radio" name="#">
+					<div class="wayOfPay-content" id="wayOfPay-6"></div>
+					<span> </span>
+					<div class="wrap-noAvailable-item-pay" id="payLate">
+						<div class="noAvailable">
+							<p class="noAvailable-text">Данный способ оплаты недоуступен для выбранного товара</p>
+						</div>
+					</div>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel labelWayOfPay" for="sixthRadioWayOfPay">
+					Рассрочка (кредит) Paylate<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+					</label>
+				</span>
+			</div>
+		</label>
+	</div>
+
+
+	<div class="col-md-3 col-sm-3 col-xs-6 wrap-centr" >
+		<label for="seventhRadioWayOfPay">
+			<div class="deliver-item variant-deliver-item variant-way-of-pay " id="seventhWayOfPay"><!--*** Добавить клас offPay  ***-->
+				<div class="block-title-choose block-title-choose-other-bottom">
+					<input class="radioWayOfPay" type="radio" id="seventhRadioWayOfPay" name="#">
+					<div class="wayOfPay-content" id="wayOfPay-7"></div>
+					<span></span>
+					<div class="wrap-noAvailable-item-pay" id="bankTransfer">
+						<div class="noAvailable">
+							<p class="noAvailable-text">Данный способ оплаты недоуступен для выбранного товара</p>
+						</div>
+					</div>
+				</div>
+				<span class="choose-delivery"> 
+					<label class="myLabel labelWayOfPay" for="seventhRadioWayOfPay">
+					Банковский перевод от юр. лица<a href="#"><i class="fa fa-question-circle-o ic"></i></a>
+					</label>
+				</span>
+			</div>
+		</label>
+	</div>
+	<!--END-->
+	</div>
+	</div>
+			
+	<div class="title">Покупатель:</div>
+	
+	<div class="deliver col-md-12 col-sm-12 col-xs-12 variant-deliver">
+	<div class="row variant-deliver-without-padding">
+
+	<div class="wrap-centr col-md-3 col-sm-3 col-xs-12">
+		<label class="registr-form" for="register">
+			<div class="register-wrap register-wrap-top">
+				<div class="block-title-choose">
+					<input type="radio" name="register" id="register" class="radio">
+					<span class="radio-r"> </span>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel label-r" for="register">Зарегистрироватся</label>
+				</span>
+			</div>
+		</label>
+	</div>
+					
+	<div class="wrap-centr col-md-3 col-sm-3 col-xs-12">
+		<label class="registr-form" for="registerAlready">
+			<div class="register-wrap register-wrap-middle">
+				<div class="block-title-choose">
+					<input type="radio" name="register" id="registerAlready" class="radio">
+					<span class="radio-r"> </span>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel label-r" for="registerAlready">Я зарегистрирован</label>
+				</span>	
+			</div>
+		</label>
+	</div>
+
+	<div class="wrap-centr col-md-3 col-sm-3 col-xs-12" >
+		<label class="registr-form" for="registerNo">
+			<div class="register-wrap register-wrap-bottom">
+				<div class="block-title-choose">
+					<input type="radio" name="register" id="registerNo" class="radio">
+					<span class="radio-r"> </span>
+				</div>
+				<span class="choose-delivery">
+					<label class="myLabel label-r bag" for="registerNo">Не регистрироваться</label>
+				</span>	
+			</div>
+		</label>
+	</div>
+
+	<div class="wrap-centr col-md-3 hidden-sm hidden-xs">
+		<img src="img/strelka-2.png" alt="">
+	</div>
+
+	<div class="wrap-centr col-md-12 col-sm-12 col-xs-12">
+		<div id="login"">
+			<div class="col-md-9 col-sm-9 col-xs-12 email-wrap">
+				<input class="email" type="text" name="email" placeholder="* E-mail / Телефон">
+			</div>
+		</div>
+		<div id="register1">
+			<div class="col-md-9 col-sm-9 col-xs-12 email-wrap">
+				<input class="email" type="text" name="email" placeholder="* Телефон">
+			</div>
+			<div class="col-md-9 col-sm-9 col-xs-12 email-wrap">
+				<input class="email" type="text" name="email" placeholder="* E-mail">
+			</div>
+			<div class="col-md-9 col-sm-9 col-xs-12 email-wrap">
+				<input class="email" type="text" name="email" placeholder="* Имя">
+			</div>
+			<div class="col-md-9 col-sm-9 col-xs-12 email-wrap">
+				<input class="email" type="text" name="email" placeholder="* Комментарий">
+			</div>
+		</div>
+	</div>
+
+	</div>
+	</div>
+	<!--end-content-->
+	</div>
+
+	<div id="column-left" class="col-md-3 col-sm-12 col-xs-12">
+		<div class="order-block">
+			<h2>Ваш заказ</h2>
+			<div class="content-item">
+				<div>Стоимость товаров:</div>
+				<span>55 100 р.</span>
+			</div>
+			<div class="content-item">
+				<div>Скидка:</div>
+				<span>1 100 р.</span>
+			</div>
+			<div class="content-item">
+				<div>Стоимость доставки:</div>
+				<span>400 р.</span>
+			</div>
+			<div class="content-item">
+				<div><b>Дополнительные услуги:</b></div>
+			</div>
+			<div class="content-item-dop">
+				<div><input checked="checked" type="checkbox" name=""></div>
+				<div>Подключение газовой плиты</div>
+				<div><span>500 р.</span></div>
+			</div>
+			<div class="content-item-dop">
+				<div><input checked="checked" type="checkbox" name=""></div>
+				<div>Подключение стиральной машины</div>
+				<div><span>600 р.</span></div>
+			</div>
+			<div class="content-item result">
+				<div>Итого к оплате:<span>54 400 р.</span></div>
+				<p>в том числе дополнительные услуги - 1100 р.</p>
+			</div>
+			<div class="content-item bonus">
+				<div>Бонусов за заказ:</div>
+				<span>544 р.</span>
+			</div>
+			<div class="content-item content-item-a">
+				<div><a href="#">У меня есть промо-код</a></div>
+			</div>
+		</div>
+			<button type="button" class="btn btn-danger">Оформить заказ</button>
+			<p class="licesia">Оформляя заказ вы соглашаетесь с условиями публичной оферты.</p>
+		</div>
+	</div>
+	</div>
+	<!--end-container-->
+	</div>
+
+	<footer style="border: solid 1px blue; height: 330px;"> footer </footer>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="bower_components/normalize-strings/normalize.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full,router.Route" type="text/javascript"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+</body>
+</html>
